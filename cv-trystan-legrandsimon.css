@@ -125,10 +125,14 @@ body {
   font-size: 18px;
 }
 
-.right_side .formations {
+.right_side > .formations {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
+}
+
+.right_side > .experiences {
+  padding-top: 100px;
 }
 
 .right_side .formations ul,
@@ -162,7 +166,7 @@ footer {
 }
 
 /* Styles pour le bouton à l'intérieur du footer */
-footer button {
+footer > button {
   padding: 10px 20px;
   margin-top: 20px;
   background-color: #007bff;
@@ -170,6 +174,11 @@ footer button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+footer > button:hover {
+  transform: scale(1.5);
 }
 
 footer button a {
