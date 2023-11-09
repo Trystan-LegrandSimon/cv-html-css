@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
     <head>
         <!-- Cette balise meta définit l'encodage des caractères de la page comme étant UTF-8, garantissant que les caractères spéciaux et internationaux sont correctement interprétés. -->
         <meta charset="UTF-8" />
@@ -8,101 +7,111 @@
         <!-- La balise meta viewport détermine comment la page est affichée sur les appareils mobiles en spécifiant le niveau de zoom initial (initial-scale=1.0) et la largeur en fonction de la largeur de l'appareil (width=device-width). -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- La balise meta description fournit un résumé concis du contenu de la page pour les moteurs de recherche et les utilisateurs. -->
+        <meta name="description" content="Découvrez un Curriculum Vitae structuré en HTML, mettant en valeur les bonnes pratiques SEO pour améliorer le référencement sur Google. Ce CV présente les compétences en développement web, en cybersécurité informatique et en mécanique automobile. Avec une organisation claire en deux sections - la partie gauche dédiée à la présentation personnelle, compétences et loisirs, et la partie droite à l'objectif professionnel, formations et expériences. Téléchargez la version PDF et explorez le profil GitHub de Trystan LEGRAND-SIMON." />
+
         <!-- Titre dans l'onglet de la page -->
         <title>CV - Trystan LEGRAND-SIMON</title>
 
-        <!-- La balise meta description fournit un résumé concis du contenu de la page pour les moteurs de recherche et les utilisateurs. -->
-        <meta name="description" content="Découvrez un Curriculum Vitae structuré en HTML, mettant en valeur les bonnes pratiques SEO pour améliorer le référencement sur Google. Ce CV présente les compétences en développement web, en cybersécurité informatique et en mécanique automobile. Avec une organisation claire en deux sections - la partie gauche dédiée à la présentation personnelle, compétences et loisirs, et la partie droite à l'objectif professionnel, formations et expériences. Téléchargez la version PDF et explorez le profil GitHub de Trystan LEGRAND-SIMON." />
+        <!--  Liaison à ma page CSS = index.css -->
+        <link rel="stylesheet" href="style.css">
 
         <!-- Icon dans l'onglet de la page -->
         <link rel="shortcut icon" href="./assets/icon_cv.png" />
 
-        <!--  Liaison à ma page CSS = index.css -->
-        <link href="style.css" rel="stylesheet" />
-        
         <!-- Bibliothèque d'icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     </head>
 
     <body>
-        <!--  CV Global -->
         <main class="container">
-            <section class="side"
-                <!-- Partie Gauche du CV -->
-                <section class="left_side">
-                    <div class="profile_text_left">
-                        <div class="img_profile">
-                            <img src="./assets/img_profile.jpg" alt="image de profile">
-                        </div>
-                        <h1>
-                            Trystan
-                            <br>
-                            LEGRAND-SIMON
-                        </h1>
+            <section class="section_gauche">
+                <div class="profile_text_gauche">
+                    <div class="img_profile">
+                        <img src="../assets/img_profile.jpg" alt="image de profile">
                     </div>
+                    <h1>
+                        Trystan
+                        <br>
+                        LEGRAND-SIMON
+                    </h1>
+                </div>
 
-                    <div class="profile_contact">
-                        <h2>Contact :</h2>
+                <div class="profil">
+                    <h2>Contact :</h2>
 
-                        <p>
-                            <a href="mailto:trystan.legrand-simon@laplateforme.io" class="link_left_side" target="_blank">
+                    <ul class="profil_list">
+                        <li>
+                            <a
+                                href="mailto:trystan.legrand-simon@laplateforme.io" class="contact" target="_blank"
+                            >
                                 <i class="fas fa-envelope"></i> 
                                 trystan.legrand-simon@laplateforme.io
                             </a>
-                        </p>
+                        </li>
 
-                        <p>
-                            <a class="link_left_side" href="https://maps.app.goo.gl/DK94a9ZBYWhPF5mq5" target="_blank">
-                                <i class="fas fa-map-marker-alt"></i>
-                                13600 La Ciotat
-                            </a>
-                        </p>
-                    </div>
+                        <li>
+                            <a
+                            class="contact"
+                            href="https://maps.app.goo.gl/DK94a9ZBYWhPF5mq5" target="_blank"
+                        >
+                            <i class="fas fa-map-marker-alt"></i>
+                            13600 La Ciotat
+                        </a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="profile_soft_skills">
-                        <h2>Soft Skills :</h2>
-                        <ul>
-                            <li>Sens de l'hétique</li>
-                            <li>Organisation et Gestion du temps</li>
-                            <li>Curiosité</li>
-                            <li>Empathie</li>
-                            <li>Esprit Critique</li>
-                        </ul>
-                    </div>
+                <div class="profil">
+                    <h2>Soft Skills :</h2>
+                    <ul class="profil_list">
+                        <li>Sens de l'hétique</li>
+                            <br>
+                        <li>Organisation <br>et<br> Gestion du temps</li>
+                            <br>
+                        <li>Curiosité</li>
+                        <li>Empathie</li>
+                        <li>Esprit Critique</li>
+                    </ul>
+                </div>
 
-                    <div class="profile_competences">
-                        <h2>Compétences :</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Git</li>
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>Symfony</li>
-                            <li>Laravel</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>NodeJS</li>
-                            <li>Cisco</li>
-                        </ul>
-                    </div>
+                <div class="profil_competences profil">
+                    <h2>Compétences :</h2>
+                    <ul class="profil_list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Symfony</li>
+                        <li>Laravel</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>NodeJS</li>
+                        <li>Cisco</li>
+                    </ul>
+                </div>
 
-                    <div class="profile_loisirs">
-                        <h2>Loisirs :</h2>
-                        <ul>
-                            <li>Développement et Intégration Web</li>
-                            <li>CyberSécurité Informatique</li>
-                            <li>Automobiles & Camions</li>
-                            <li>Voile</li>
-                            <li>VTT</li>
-                            <li>Photographie</li>
-                            <li>Animaux</li>
-                        </ul>
-                    </div>
-                </section>
-        
-                <!-- Partie Droite du CV -->
-                <section class="right_side">
+                <div class="profil">
+                    <h2>Loisirs :</h2>
+                    <ul class="profil_list">
+                        <li>Développement <br>et<br> Intégration Web</li>
+                            <br>
+                        <li>CyberSécurité <br> Informatique</li>
+                            <br>
+                        <li>Automobiles <br>&<br> Camions</li>
+                            <br>
+                        <li>Voile</li>
+                        <li>VTT</li>
+                        <li>Photographie</li>
+                        <li>Animaux</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section_droite">
+                <div class="container_projet">
+                    <h2 id="cv">Curriculum <br> Vitæ</h2>
                     <div class="projet_pro">
                         <h2>Objectif Professionnel :</h2>
                         <p>
@@ -172,13 +181,8 @@
                             </li>
                         </ul>
                     </div>
-                </section>
+                </div>
             </section>
-            
-            <footer>
-                <button><a href="https://github.com/Trystan-LegrandSimon?tab=repositories" target="_blank">GitHub</a></button>
-                <button><a href="./cv-pdf/CV.pdf" download>Télécharger CV en PDF</a></button>
-            </footer>
         </main>
     </body>
 </html>

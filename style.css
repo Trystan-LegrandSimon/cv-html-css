@@ -1,5 +1,6 @@
+/* ------------------------------- DÉBUT PARAMÈTRES ---------------------------- */
 /* Import de la police d'écriture */
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 
 /* Rénitialisation du CSS */
 * {
@@ -7,8 +8,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Akaya Telivigala";
+  text-decoration: none;
+  list-style: none;
 }
-
+/* Enlever la ScrollBar */
+::-webkit-scrollbar {
+  display: none;
+}
+/* ------------------------------- DÉBUT PARAMÈTRES ---------------------------- */
+/* ------------------------------- DÉBUT BASE ---------------------------- */
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -18,176 +26,148 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
-
 .container {
-  margin: 50px;
-  width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
-  box-shadow: 0 35px 55px;
-}
-
-.side {
+  padding: 5vw;
   display: flex;
+  flex-direction: row;
+  min-height: 100vh;
 }
-
-.left_side {
-  background: #130f40;
-  padding: 40px;
+/* ------------------------------- FIN BASE ---------------------------- */
+/* ------------------------------- DÉBUT SECTION GAUCHE ---------------------------- */
+.section_gauche {
+  background-color: #130f40;
   width: 40%;
-  color: white;
+  height: auto;
+  color: #fff;
+  padding: 3vw;
 }
-
-.profile_text_left {
+.profile_text_gauche {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
-  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
 }
-
 .img_profile > img {
-  width: 200px;
+  width: 100%;
+  height: auto;
+  max-width: 10vw;
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow:  5px 5px 5px #000000;
   transition: 1s;
 }
-
 .img_profile > img:hover {
- transform: scale(1.5);
+  transform: scale(1.5);
 }
-
-.left_side h1 {
-  font-size: 30px;
+.profile_text_gauche > h1 {
+  font-size: 3vw;
   text-align: center;
+  text-shadow: -3px -4px 0px white;
 }
-
-.left_side h2 {
-  padding-top: 10px;
+.contact {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 0.5vh;
+}
+.fas {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.contact:hover {
+  color: blue;
+}
+.profil {
+  margin-top: 20px;
+  border-top: 2px solid gray;
+}
+.profil > h2 {
+  padding-top: 2vh;
   font-size: 25px;
 }
-
-.link_left_side {
-  text-decoration: none;
-  color: white;
+.profil_list > li {
+  padding-top: 0.5vh;
+  font-size: 18px;
+  font-style: italic;
   display: flex;
   align-items: center;
-  font-size: 18px;
-  padding-top: 5px;
+  justify-content: center;
+  text-align: center;
 }
-
-.link_left_side > i {
-  padding-left: 12px;
-  padding-right: 5px;
+@media screen and (max-width: 768px) {
+  .contact {
+    font-size: 10px;
+  }
+  .fas {
+    font-size: 10px;
+  }
+    .profil > h2 {
+    font-size: 20px;
+  }
+  .profil_list > li {
+    font-size: 10px;
+    text-align: center;
+  }
 }
-
-.link_left_side:hover {
-  color: blue;
-  
-}
-
-.profile_soft_skills,
-.profile_competences,
-.profile_loisirs {
-  font-size: 18px;
-  padding-top: 10px;
-  
-}
-
-.profile_soft_skills > ul,
-.profile_competences > ul,
-.profile_loisirs > ul {
-  padding-left: 22px;
-  padding-top: 5px;
-}
-
-/* Partie Droite */
-.container .right_side {
-  background: white;
-  padding: 40px;
+/* ------------------------------- FIN SECTION GAUCHE ---------------------------- */
+/* ------------------------------- DÉBUT SECTION DROITE ---------------------------- */
+.section_droite {
+  background-color: #fff;
   width: 60%;
+  height: auto;
+  padding: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
-.right_side .projet_pro {
+#cv {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 150px;
+    text-shadow: -3px -4px 0px black;
+}
+.projet_pro {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
-
-.right_side .projet_pro p {
+.projet_pro p {
   padding-left: 50px;
   font-size: 18px;
+  text-align: center;
 }
-
-.right_side > .formations {
+.formations {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
-
-.right_side > .experiences {
+.experiences {
   padding-top: 100px;
 }
-
-.right_side .formations ul,
+.formations ul,
 .experiences ul {
   padding-left: 50px;
 }
-
-.right_side h2 {
+.section_droite h2 {
   font-size: 25px;
   margin-bottom: 10px;
   color: black;
 }
-
-.right_side li {
+.section_droite li {
   margin-bottom: 15px;
   color: black;
 }
-
-.right_side li span {
-  font-style: italic; 
+.section_droite li span {
+  font-style: italic;
   color: #777;
 }
-
-/* Styles pour le footer */
-footer {
-  background-color: black;
-  width: 1000px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-}
-
-/* Styles pour le bouton à l'intérieur du footer */
-footer > button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-footer > button:hover {
-  transform: scale(1.5);
-}
-
-footer button a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-/* On enlève la barre latéral de scroll */
-::-webkit-scrollbar {
-  display: none;
-}
+/* ------------------------------- FIN SECTION DROITE ---------------------------- */
