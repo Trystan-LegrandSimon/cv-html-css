@@ -162,6 +162,12 @@ body {
     .container {
       padding: 0;
     }
+    .img_profile > img {
+        box-shadow: none;
+    }
+    .profile_text_gauche > h1 {
+        text-shadow: none;
+    }
     .contact {
       font-size: 10px;
     }
@@ -182,5 +188,6 @@ body {
     #cv {
         font-size: 30px;
         margin-bottom: -30px;
+        text-shadow: none;
     }
 }
