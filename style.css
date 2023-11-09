@@ -103,21 +103,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .contact {
-    font-size: 10px;
-  }
-  .fas {
-    font-size: 10px;
-  }
-    .profil > h2 {
-    font-size: 20px;
-  }
-  .profil_list > li {
-    font-size: 10px;
-    text-align: center;
-  }
-}
 /* ------------------------------- FIN SECTION GAUCHE ---------------------------- */
 /* ------------------------------- DÉBUT SECTION DROITE ---------------------------- */
 .section_droite {
@@ -171,3 +156,29 @@ body {
   color: #777;
 }
 /* ------------------------------- FIN SECTION DROITE ---------------------------- */
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 0;
+    }
+    .contact {
+      font-size: 10px;
+    }
+    .fas {
+      font-size: 10px;
+    }
+    .profil > h2,
+    .section_droite h2 {
+      font-size: 20px;
+    }
+    .profil_list > li,
+    .section_droite li {
+      font-size: 10px;
+    }
+    .projet_pro p {
+        font-size: 10px;
+    }
+    #cv {
+        font-size: 30px;
+        margin-bottom: -30px;
+    }
+}
