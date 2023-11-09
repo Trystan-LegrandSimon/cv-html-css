@@ -156,6 +156,8 @@ body {
   color: #777;
 }
 /* ------------------------------- FIN SECTION DROITE ---------------------------- */
+
+/* ------------------------------- RESPONSIVE ---------------------------- */
 @media screen and (max-width: 768px) {
     .container {
       padding: 0;
