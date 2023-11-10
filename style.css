@@ -26,13 +26,9 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   background-attachment: fixed;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 .container {
-  padding: 5vw;
+  padding: 5vw 5vw 0 5vw;
   display: flex;
   flex-direction: row;
   min-height: 100vh;
@@ -59,7 +55,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow:  5px 5px 5px #000000;
+  box-shadow: 5px 5px 5px #000000;
   transition: 1s;
 }
 .img_profile > img:hover {
@@ -115,10 +111,10 @@ body {
   align-items: center;
 }
 #cv {
-    font-size: 70px;
-    text-align: center;
-    margin-bottom: 150px;
-    text-shadow: -3px -4px 0px black;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 150px;
+  text-shadow: -3px -4px 0px black;
 }
 .projet_pro {
   padding-top: 50px;
@@ -157,37 +153,47 @@ body {
 }
 /* ------------------------------- FIN SECTION DROITE ---------------------------- */
 
+/* ------------------------------- DÉBUT FOOTER ---------------------------- */
+footer {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------------------------- FIN FOOTER ---------------------------- */
+
 /* ------------------------------- RESPONSIVE ---------------------------- */
 @media screen and (max-width: 768px) {
-    .container {
-      padding: 0;
-    }
-    .img_profile > img {
-        box-shadow: none;
-    }
-    .profile_text_gauche > h1 {
-        text-shadow: none;
-    }
-    .contact {
-      font-size: 10px;
-    }
-    .fas {
-      font-size: 10px;
-    }
-    .profil > h2,
-    .section_droite h2 {
-      font-size: 20px;
-    }
-    .profil_list > li,
-    .section_droite li {
-      font-size: 10px;
-    }
-    .projet_pro p {
-        font-size: 10px;
-    }
-    #cv {
-        font-size: 30px;
-        margin-bottom: -30px;
-        text-shadow: none;
-    }
+  .container {
+    padding: 0;
+  }
+  .img_profile > img {
+    box-shadow: none;
+  }
+  .profile_text_gauche > h1 {
+    text-shadow: none;
+  }
+  .contact {
+    font-size: 10px;
+  }
+  .fas {
+    font-size: 10px;
+  }
+  .profil > h2,
+  .section_droite h2 {
+    font-size: 20px;
+  }
+  .profil_list > li,
+  .section_droite li {
+    font-size: 10px;
+  }
+  .projet_pro p {
+    font-size: 10px;
+  }
+  #cv {
+    font-size: 30px;
+    margin-bottom: -30px;
+    text-shadow: none;
+  }
 }
