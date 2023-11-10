@@ -64,7 +64,7 @@ body {
 .profile_text_gauche > h1 {
   font-size: 3vw;
   text-align: center;
-  text-shadow: -3px -4px 0px white;
+  text-shadow: -3px -2px 0px white;
 }
 .contact {
   color: #fff;
@@ -113,16 +113,16 @@ body {
 #cv {
   font-size: 70px;
   text-align: center;
-  margin-bottom: 150px;
-  text-shadow: -3px -4px 0px black;
+  margin-top: 20px;
+  text-shadow: -3px -1px 0px black;
 }
 .projet_pro {
-  padding-top: 50px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
 .projet_pro p {
-  padding-left: 50px;
+  padding-left: 10px;
   font-size: 18px;
   text-align: center;
 }
@@ -143,7 +143,7 @@ body {
   margin-bottom: 10px;
   color: black;
 }
-.section_droite li {
+.section_droite > li {
   margin-bottom: 15px;
   color: black;
 }
@@ -151,8 +151,15 @@ body {
   font-style: italic;
   color: #777;
 }
+.formations_list,
+.experiences_list {
+  padding-bottom: 20px;
+}
+.formations_list,
+.experiences_list > ul {
+  padding-left: 50px;
+}
 /* ------------------------------- FIN SECTION DROITE ---------------------------- */
-
 /* ------------------------------- DÉBUT FOOTER ---------------------------- */
 footer {
   color: #fff;
@@ -163,7 +170,7 @@ footer {
 }
 /* ------------------------------- FIN FOOTER ---------------------------- */
 
-/* ------------------------------- RESPONSIVE ---------------------------- */
+/* ------------------------------- DÉBUT RESPONSIVE ---------------------------- */
 @media screen and (max-width: 768px) {
   .container {
     padding: 0;
@@ -184,16 +191,24 @@ footer {
   .section_droite h2 {
     font-size: 20px;
   }
-  .profil_list > li,
-  .section_droite li {
-    font-size: 10px;
+  #cv {
+    font-size: 30px;
+    text-shadow: none;
+  }
+  .projet_pro {
+    padding-top: 50px;
   }
   .projet_pro p {
     font-size: 10px;
   }
-  #cv {
-    font-size: 30px;
-    margin-bottom: -30px;
-    text-shadow: none;
+  .formations {
+    padding-top: 50px;
+  }
+  .formations ul {
+    padding-left: 10px;
+  }
+  .experiences {
+    padding-top: 50px;
   }
 }
+/* ------------------------------- FIN RESPONSIVE ---------------------------- */
