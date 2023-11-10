@@ -164,10 +164,23 @@ body {
 footer {
   color: #fff;
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.btn {
+  background-color: aliceblue;
+  padding: 10px;
+  
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  
 }
+/* footer a {
+  text-align: center;
+} */
 /* ------------------------------- FIN FOOTER ---------------------------- */
 
 /* ------------------------------- DÉBUT RESPONSIVE ---------------------------- */
@@ -191,6 +204,9 @@ footer {
   .section_droite h2 {
     font-size: 20px;
   }
+  .profil_list > li {
+    font-size: 10px;
+  }
   #cv {
     font-size: 30px;
     text-shadow: none;
@@ -202,13 +218,19 @@ footer {
     font-size: 10px;
   }
   .formations {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .formations ul {
     padding-left: 10px;
   }
+  .formations li {
+    font-size: 10px;
+  }
   .experiences {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+  .experiences li {
+    font-size: 10px;
   }
 }
 /* ------------------------------- FIN RESPONSIVE ---------------------------- */
