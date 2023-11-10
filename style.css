@@ -175,11 +175,14 @@ footer {
 }
 .btn a {
   text-decoration: none;
-  color: white; /* Changement de la couleur du texte */
+  color: white;
 }
-
+.btn:hover {
+  background-color: #0066ff;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 20px 5px #000, 0px 15px 20px -5px rgba(0, 0, 0, 0.3);
+}
 /* ------------------------------- FIN FOOTER ---------------------------- */
-
 /* ------------------------------- DÉBUT RESPONSIVE ---------------------------- */
 @media screen and (max-width: 768px) {
   .container {
